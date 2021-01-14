@@ -1,0 +1,21 @@
+<!--components/area-picker/index.wxml-->
+<view class="wraper">
+  <view class="label" wx:if="{{area.length === 1}}">
+    <picker bindchange="bindPickerChange" range-key="{{rangeKey}}" value="{{index}}" range="{{array}}" class="mini-region-picker-class">
+      <slot />
+    </picker>
+  </view>
+
+  <view class="label" wx:if="{{area.length === 2}}">
+    <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" range="{{multiArray}}" range-key="{{rangeKey}}" class="mini-region-picker-class">
+      <slot />
+    </picker>
+  </view>
+
+  <view class="label" wx:if="{{area.length === 3}}">
+     <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}" class="mini-region-picker-class">
+      <slot />
+    </picker>
+  </view>
+
+</view>

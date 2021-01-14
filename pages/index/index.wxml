@@ -1,0 +1,43 @@
+<!--index.wxml-->
+<view class="container">
+
+  <!-- 一级选择 -->
+  <view class="label">
+    <view class="text">一级选择-获取所有省份</view>
+    <area-picker area="{{firstProvince}}" bindgetSelectData="getFirstAreaValue">
+        <view class="value">当前选择：{{firstAreaValue.province}}</view>
+    </area-picker>
+  </view>
+
+  <view class="label">
+    <view class="text">一级选择-获取所有市</view>
+    <area-picker area="{{firstCity}}" bindgetSelectData="getFirstAreaValue">
+        <view class="value">当前选择：{{firstAreaValue.city}}</view>
+    </area-picker>
+  </view>
+
+  <view class="label">
+    <view class="text">一级选择-获取所有区</view>
+    <area-picker area="{{firstCountry}}" bindgetSelectData="getFirstAreaValue">
+        <view class="value">当前选择：{{firstAreaValue.country}}</view>
+    </area-picker>
+  </view>
+
+  <!-- 二级选择 -->
+  <view class="label">
+    <view class="text">二级选择-获取省市</view>
+    <area-picker area="{{secondArea}}" rangeKey="" bindgetSelectData="getSecondAreaValue">
+      <view class="value">当前选择：{{secondAreaValue}}</view>
+    </area-picker>
+  </view>
+
+  <!-- 三级选择 -->
+  <view class="label">
+    <view class="text">三级选择-获取省市区</view>
+    <area-picker area="{{thirdArea}}" bindgetSelectData="getThirdAreaValue">
+      <view class="value">当前选择：{{thirdAreaValue}}</view>
+    </area-picker>
+  </view>
+
+
+</view>

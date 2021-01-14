@@ -1,0 +1,28 @@
+/**index.wxss**/
+
+.container {
+  position: relative;
+  padding: 50rpx 30rpx;
+}
+
+.label {
+  width: 100%;
+  position: relative;
+  padding-bottom: 40rpx;
+}
+
+.text {
+  font-size: 30rpx;
+  color: #999;
+  padding-bottom: 20rpx;
+}
+
+.value {
+  font-size: 32rpx;
+  color: #333;
+  border: 2rpx solid #ddd;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding: 0 20rpx;
+  border-radius: 8rpx;
+}
