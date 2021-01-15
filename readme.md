@@ -1,5 +1,5 @@
 # 地区选择组件
-基于小程序picker组件的封装
+基于小程序picker组件的封装, 支持省，市，区，省市，省市区的单独选择
 ## 预览
 ![image](https://raw.githubusercontent.com/WGinit/Assets/master/project/images/mini-region-picker-1.png)
 ## Demo
